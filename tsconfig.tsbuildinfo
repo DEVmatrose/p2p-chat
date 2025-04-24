@@ -1,0 +1,1 @@
+{"root":["./src/main.ts","./src/shims-vue.d.ts","./src/vite-env.d.ts","./src/App.vue","./src/components/ChatMessages.vue","./src/components/ConsentDialog.vue","./src/components/FileTransferUI.vue","./src/components/HelloWorld.vue","./src/components/MessageInput.vue","./src/components/VideoPlayer.vue","./src/views/ChatView.vue"],"version":"5.7.3"}
