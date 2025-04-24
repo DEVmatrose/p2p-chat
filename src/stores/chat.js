@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia';
 import { ref } from 'vue';
-
+ 
+// @ts-ignore
 export const useChatStore = defineStore('chat', () => {
   // Verbindungsstatus
   const connectionState = ref('disconnected'); // 'connecting', 'connected', 'failed', 'disconnected'
@@ -36,6 +37,10 @@ export const useChatStore = defineStore('chat', () => {
     remoteStream.value = stream;
   }
 
+    function setSignalingServerStatus(status){
+        signalingServerStatus.value = status
+    }
+
   // ... weitere Status und Aktionen
 
   return {
@@ -55,6 +60,7 @@ export const useChatStore = defineStore('chat', () => {
     addMessage,
     setLocalStream,
     setRemoteStream,
+    setSignalingServerStatus,
     // ...
   };
 });
