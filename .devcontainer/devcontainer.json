@@ -1,0 +1,6 @@
+{
+  "name": "p2p-chat",
+  "image": "gcr.io/devfile-registry/universal-java:latest",
+  "ports": [5173, 3000],
+  "forwardPorts": [5173, 3000]
+}
